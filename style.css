@@ -1,0 +1,188 @@
+:root {
+--nav-background-color: #33292a;
+--white-color: #fff;
+--link-color: #efa69d;
+--link-hover: #e9877b;
+--trip-background: #f2f2f2;
+--where-go-background: #644b4f;
+--footer-background: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    padding: 64px 32px;
+}
+/* HEADER */
+nav {
+    background-color: var(--nav-background-color);
+    height: 64px;
+    position: relative;
+}
+
+.navigation {
+    display: none;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:12px;
+    right: 32px;
+}
+
+.icon-img {
+    width: 100%;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 780px;
+    background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.hero-title {
+    color: var(--white-color);
+    font-size: 42px;
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    text-align: right;
+    width: 270px;
+}
+
+/* ABOUT US */
+.img-container {
+    width: 100%;
+    height: 332px;
+    background-image: url("images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg");
+    background-size: cover;
+    background-position: center 90%;
+    margin-top: 16px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* WHAT WE DO */
+.what-we-do {
+    background-color: var(--nav-background-color);
+    text-align: center;
+    color: var(--white-color);
+}
+.images-container {
+    display: flex;
+    flex-direction: column;
+}
+.icon-container {
+    width: 93px;
+    margin: 32px auto;
+    color: var(--white-color);
+}
+/* OUR TRIPS */
+.our-trips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.our-trips img {
+    border-radius: 4px;
+}
+
+.title-container {
+    width: 100%;
+    height: 80px;
+    background-color: var(--trip-background);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* WHERE DO YOU WANT TO GO */
+.where-go {
+    background-color: var(--where-go-background);
+    color: var(--white-color);
+}
+
+.where-go p {
+    margin: 32px 0;
+}
+.button {
+    text-transform: uppercase;
+    padding: 8px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    margin-top: 32px;
+}
+/* REVIEWS */
+.reviews {
+    text-align: center;
+}
+
+.photo-container {
+    width: 110px;
+    height: 110px;
+    margin: 64px auto 32px auto;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+    margin: 32px 0;
+}
+/* GALLERY */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* FOOTER */
+footer {
+    background-color: var(--footer-background);
+    text-align: center;
+    padding: 32px;
+}
+
+footer a {
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--link-hover);
+}
+
+footer p {
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+

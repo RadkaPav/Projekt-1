@@ -1,0 +1,106 @@
+/* MEDIA QUERY */
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    /* HEADER */
+    nav {
+        padding: 24px 20%;
+    }
+
+    .navigation {
+        display: flex;
+        color: var(--white-color);
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        list-style: none;
+    }
+
+    .navigation a {
+        color: var(--white-color);
+        text-decoration: none;
+    }
+    
+    .navigation a:hover {
+        cursor: pointer;
+        color: var(--link-hover);
+    }
+
+    .icon {
+        display: none;
+    }
+
+    /* HERO SECTION */
+    .hero-title {
+        right: 20%;
+        bottom: 64px;
+    }
+
+    /* ABOUT US */
+    .about-us {
+        display: flex;
+        flex-wrap: no-wrap;
+        gap: 16px;
+    }
+
+    .text-container {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
+
+    .img-container {
+        height: auto;
+        flex-grow: 1;
+        flex-basis: 300px;
+        margin: 0;
+    }
+
+    /* WHAT WE DO */
+    .images-container {
+        flex-direction: row;
+    }
+
+    /* OUR TRIPS */
+    .our-trips .img {
+        width: calc(100% / 3 - 6px);
+    }
+
+    .title-container {
+        height: auto;
+    }
+
+    /* WHERE DO YOU WANT TO GO */
+    .where-go {
+        display: flex;
+    }
+
+    .title {
+        flex-grow: 1;
+        flex-basis: 30%;
+    }
+
+    .where-go-text {
+        flex-grow: 1;
+        flex-basis: 60%;
+    }
+
+    .where-go p {
+        margin-top: 0;
+    }
+
+    /* REVIEWS */
+    .reviews-container {
+        display: flex;
+        gap: 32px;
+    }
+
+    /* GALLERY */
+    .gallery img {
+        width: 50%;
+    }
+
+}
