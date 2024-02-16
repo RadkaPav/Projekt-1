@@ -5,29 +5,17 @@
         padding-right: 20%;
     }
 
-    /* HEADER */
+    /* NAVIGATION */
     nav {
-        padding: 24px 20%;
+        padding: 15px 20%;
     }
 
     .navigation {
+        position: static;
         display: flex;
         color: var(--white-color);
         justify-content: space-around;
-    }
-
-    .navigation li {
-        list-style: none;
-    }
-
-    .navigation a {
-        color: var(--white-color);
-        text-decoration: none;
-    }
-    
-    .navigation a:hover {
-        cursor: pointer;
-        color: var(--link-hover);
+        padding: 0;
     }
 
     .icon {
@@ -35,6 +23,10 @@
     }
 
     /* HERO SECTION */
+    .hero-section {
+        height: 600px;
+    }
+
     .hero-title {
         right: 20%;
         bottom: 64px;

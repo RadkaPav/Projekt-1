@@ -1,11 +1,11 @@
 :root {
---nav-background-color: #33292a;
---white-color: #fff;
---link-color: #efa69d;
---link-hover: #e9877b;
---trip-background: #f2f2f2;
---where-go-background: #644b4f;
---footer-background: #333333;
+    --nav-background-color: #33292a;
+    --white-color: #fff;
+    --link-color: #efa69d;
+    --link-hover: #e9877b;
+    --trip-background: #f2f2f2;
+    --where-go-background: #644b4f;
+    --footer-background: #333333;
 }
 
 * {
@@ -21,7 +21,8 @@ body {
 .container {
     padding: 64px 32px;
 }
-/* HEADER */
+
+/* NAVIGATION */
 nav {
     background-color: var(--nav-background-color);
     height: 64px;
@@ -30,18 +31,45 @@ nav {
 
 .navigation {
     display: none;
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+}
+
+.navigation li {
+    margin: 8px;
+    list-style: none;
+}
+
+.navigation a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    cursor: pointer;
+    color: var(--link-hover);
+}
+
+.show {
+    display: block;
 }
 
 .icon {
     width: 40px;
     height: 40px;
     position: absolute;
-    top:12px;
+    top: 12px;
     right: 32px;
 }
 
-.icon-img {
-    width: 100%;
+.fa-solid {
+    font-size: 36px;
+    color: var(--white-color);
 }
 
 /* HERO SECTION */
@@ -93,15 +121,18 @@ nav {
     text-align: center;
     color: var(--white-color);
 }
+
 .images-container {
     display: flex;
     flex-direction: column;
 }
+
 .icon-container {
     width: 93px;
     margin: 32px auto;
     color: var(--white-color);
 }
+
 /* OUR TRIPS */
 .our-trips {
     display: flex;
@@ -122,6 +153,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 /* WHERE DO YOU WANT TO GO */
 .where-go {
     background-color: var(--where-go-background);
@@ -131,7 +163,9 @@ nav {
 .where-go p {
     margin: 32px 0;
 }
+
 .button {
+
     text-transform: uppercase;
     padding: 8px 16px;
     font-weight: bold;
@@ -139,6 +173,16 @@ nav {
     border-radius: 4px;
     margin-top: 32px;
 }
+
+.button a {
+    color: var(--where-go-background);
+    text-decoration: none;
+}
+
+.button a:hover {
+    color: var(--link-hover);
+}
+
 /* REVIEWS */
 .reviews {
     text-align: center;
@@ -160,11 +204,13 @@ nav {
 .name {
     margin: 32px 0;
 }
+
 /* GALLERY */
 .gallery {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* FOOTER */
 footer {
     background-color: var(--footer-background);
@@ -188,3 +234,23 @@ footer p {
     margin-top: 12px;
 }
 
+/* BUTTON */
+
+.top {
+    position: fixed;
+    display: none;
+    background-color: var(--nav-background-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border: 1px solid var(--link-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    bottom: 50px;
+    right: 50px;
+}
+
+.top:hover {
+    background-color: var(--where-go-background);
+    color: var(--link-hover);
+}
